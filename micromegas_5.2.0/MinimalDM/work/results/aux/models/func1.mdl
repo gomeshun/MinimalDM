@@ -1,3 +1,6 @@
+Minimal_DM
+ Constraints
+  Name         |> Expression                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <|
 %*slhaFound    |1+access("vars1.lha", 0)                                                                                       %Check whether LHA file is present.
 %*rdSLHA       |if(slhaFound,slhaRead("vars1.lha", 0),-1)                                                                      %Read LHA file.
 %cabi          |if(slhaFound,if(slhaValExists("CKMBLOCK",1,1),slhaVal("CKMBLOCK",0,1,1),cabiDef),cabiDef)                      %Cabibbo angle                                     
@@ -59,42 +62,42 @@ CKM2x3         |0                                                               
 CKM3x1         |0                                                                                                              % CKM-Matrix ( CKM3x1 )                             
 CKM3x2         |0                                                                                                              % CKM-Matrix ( CKM3x2 )                             
 CKM3x3         |1                                                                                                              % CKM-Matrix ( CKM3x3 )                             
-I1b11          |CKM1x1*ydo                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
-I1b12          |CKM2x1*ydo                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
-I1b13          |CKM3x1*ydo                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
-I1b21          |CKM1x2*ys                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I1b22          |CKM2x2*ys                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I1b23          |CKM3x2*ys                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I1b31          |CKM1x3*yb                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I1b32          |CKM2x3*yb                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I1b33          |CKM3x3*yb                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I2b11          |CKM1x1*yup                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
-I2b12          |CKM2x1*yc                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I2b13          |CKM3x1*yt                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I2b21          |CKM1x2*yup                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
-I2b22          |CKM2x2*yc                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I2b23          |CKM3x2*yt                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I2b31          |CKM1x3*yup                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
-I2b32          |CKM2x3*yc                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I2b33          |CKM3x3*yt                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I3b11          |CKM1x1*yup                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
-I3b12          |CKM1x2*yup                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
-I3b13          |CKM1x3*yup                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
-I3b21          |CKM2x1*yc                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I3b22          |CKM2x2*yc                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I3b23          |CKM2x3*yc                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I3b31          |CKM3x1*yt                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I3b32          |CKM3x2*yt                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I3b33          |CKM3x3*yt                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I4b11          |CKM1x1*ydo                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
-I4b12          |CKM1x2*ys                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I4b13          |CKM1x3*yb                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I4b21          |CKM2x1*ydo                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
-I4b22          |CKM2x2*ys                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I4b23          |CKM2x3*yb                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I4b31          |CKM3x1*ydo                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
-I4b32          |CKM3x2*ys                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
-I4b33          |CKM3x3*yb                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I1c11          |CKM1x1*ydo                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
+I1c12          |CKM2x1*ydo                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
+I1c13          |CKM3x1*ydo                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
+I1c21          |CKM1x2*ys                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I1c22          |CKM2x2*ys                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I1c23          |CKM3x2*ys                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I1c31          |CKM1x3*yb                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I1c32          |CKM2x3*yb                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I1c33          |CKM3x3*yb                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I2c11          |CKM1x1*yup                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
+I2c12          |CKM2x1*yc                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I2c13          |CKM3x1*yt                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I2c21          |CKM1x2*yup                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
+I2c22          |CKM2x2*yc                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I2c23          |CKM3x2*yt                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I2c31          |CKM1x3*yup                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
+I2c32          |CKM2x3*yc                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I2c33          |CKM3x3*yt                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I3c11          |CKM1x1*yup                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
+I3c12          |CKM1x2*yup                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
+I3c13          |CKM1x3*yup                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
+I3c21          |CKM2x1*yc                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I3c22          |CKM2x2*yc                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I3c23          |CKM2x3*yc                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I3c31          |CKM3x1*yt                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I3c32          |CKM3x2*yt                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I3c33          |CKM3x3*yt                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I4c11          |CKM1x1*ydo                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
+I4c12          |CKM1x2*ys                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I4c13          |CKM1x3*yb                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I4c21          |CKM2x1*ydo                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
+I4c22          |CKM2x2*ys                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I4c23          |CKM2x3*yb                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I4c31          |CKM3x1*ydo                                                                                                     % Abbreviation used in optimizatized FeynRules outpu
+I4c32          |CKM3x2*ys                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
+I4c33          |CKM3x3*yb                                                                                                      % Abbreviation used in optimizatized FeynRules outpu
 x1x0           |-6*lam                                                                                                         % Z.f  Z.f  Z.f  Z.f   coupling.
 x2x0           |-2*lam                                                                                                         % Z.f  Z.f  W+.f W-.f  coupling.
 x3x0           |-4*lam                                                                                                         % W+.f W+.f W-.f W-.f  coupling.
@@ -135,32 +138,32 @@ x37x0          |1                                                               
 x38x0          |1                                                                                                              % g    g    g     coupling.
 x39x           |-pow(2,-0.5)                                                                                                   % g    g    g        coupling.
 x40x0          |0.5                                                                                                            % W-.f d~   u     coupling.
-x40x1          |-I1b11+I2b11                                                                                                   % W-.f d~   u        coupling.
-x40x2          |I1b11+I2b11                                                                                                    % W-.f d~   u        coupling.
+x40x1          |-I1c11+I2c11                                                                                                   % W-.f d~   u        coupling.
+x40x2          |I1c11+I2c11                                                                                                    % W-.f d~   u        coupling.
 x41x0          |0.5                                                                                                            % W-.f d~   c     coupling.
-x41x1          |-I1b12+I2b12                                                                                                   % W-.f d~   c        coupling.
-x41x2          |I1b12+I2b12                                                                                                    % W-.f d~   c        coupling.
+x41x1          |-I1c12+I2c12                                                                                                   % W-.f d~   c        coupling.
+x41x2          |I1c12+I2c12                                                                                                    % W-.f d~   c        coupling.
 x42x0          |0.5                                                                                                            % W-.f d~   t     coupling.
-x42x1          |-I1b13+I2b13                                                                                                   % W-.f d~   t        coupling.
-x42x2          |I1b13+I2b13                                                                                                    % W-.f d~   t        coupling.
+x42x1          |-I1c13+I2c13                                                                                                   % W-.f d~   t        coupling.
+x42x2          |I1c13+I2c13                                                                                                    % W-.f d~   t        coupling.
 x43x0          |0.5                                                                                                            % W-.f s~   u     coupling.
-x43x1          |-I1b21+I2b21                                                                                                   % W-.f s~   u        coupling.
-x43x2          |I1b21+I2b21                                                                                                    % W-.f s~   u        coupling.
+x43x1          |-I1c21+I2c21                                                                                                   % W-.f s~   u        coupling.
+x43x2          |I1c21+I2c21                                                                                                    % W-.f s~   u        coupling.
 x44x0          |0.5                                                                                                            % W-.f s~   c     coupling.
-x44x1          |-I1b22+I2b22                                                                                                   % W-.f s~   c        coupling.
-x44x2          |I1b22+I2b22                                                                                                    % W-.f s~   c        coupling.
+x44x1          |-I1c22+I2c22                                                                                                   % W-.f s~   c        coupling.
+x44x2          |I1c22+I2c22                                                                                                    % W-.f s~   c        coupling.
 x45x0          |0.5                                                                                                            % W-.f s~   t     coupling.
-x45x1          |-I1b23+I2b23                                                                                                   % W-.f s~   t        coupling.
-x45x2          |I1b23+I2b23                                                                                                    % W-.f s~   t        coupling.
+x45x1          |-I1c23+I2c23                                                                                                   % W-.f s~   t        coupling.
+x45x2          |I1c23+I2c23                                                                                                    % W-.f s~   t        coupling.
 x46x0          |0.5                                                                                                            % W-.f b~   u     coupling.
-x46x1          |-I1b31+I2b31                                                                                                   % W-.f b~   u        coupling.
-x46x2          |I1b31+I2b31                                                                                                    % W-.f b~   u        coupling.
+x46x1          |-I1c31+I2c31                                                                                                   % W-.f b~   u        coupling.
+x46x2          |I1c31+I2c31                                                                                                    % W-.f b~   u        coupling.
 x47x0          |0.5                                                                                                            % W-.f b~   c     coupling.
-x47x1          |-I1b32+I2b32                                                                                                   % W-.f b~   c        coupling.
-x47x2          |I1b32+I2b32                                                                                                    % W-.f b~   c        coupling.
+x47x1          |-I1c32+I2c32                                                                                                   % W-.f b~   c        coupling.
+x47x2          |I1c32+I2c32                                                                                                    % W-.f b~   c        coupling.
 x48x0          |0.5                                                                                                            % W-.f b~   t     coupling.
-x48x1          |-I1b33+I2b33                                                                                                   % W-.f b~   t        coupling.
-x48x2          |I1b33+I2b33                                                                                                    % W-.f b~   t        coupling.
+x48x1          |-I1c33+I2c33                                                                                                   % W-.f b~   t        coupling.
+x48x2          |I1c33+I2c33                                                                                                    % W-.f b~   t        coupling.
 x49x0          |-(ydo*pow(2,-0.5))                                                                                             % Z.f  d~   d     coupling.
 x50x0          |-(ys*pow(2,-0.5))                                                                                              % Z.f  s~   s     coupling.
 x51x0          |-(yb*pow(2,-0.5))                                                                                              % Z.f  b~   b     coupling.
@@ -177,32 +180,32 @@ x61x0          |-(ye*pow(2,-0.5))                                               
 x62x0          |-(ym*pow(2,-0.5))                                                                                              % H    mu+  mu-   coupling.
 x63x0          |-(ytau*pow(2,-0.5))                                                                                            % H    ta+  ta-   coupling.
 x64x0          |0.5                                                                                                            % W+.f u~   d     coupling.
-x64x1          |-I3b11+I4b11                                                                                                   % W+.f u~   d        coupling.
-x64x2          |I3b11+I4b11                                                                                                    % W+.f u~   d        coupling.
+x64x1          |-I3c11+I4c11                                                                                                   % W+.f u~   d        coupling.
+x64x2          |I3c11+I4c11                                                                                                    % W+.f u~   d        coupling.
 x65x0          |0.5                                                                                                            % W+.f u~   s     coupling.
-x65x1          |-I3b12+I4b12                                                                                                   % W+.f u~   s        coupling.
-x65x2          |I3b12+I4b12                                                                                                    % W+.f u~   s        coupling.
+x65x1          |-I3c12+I4c12                                                                                                   % W+.f u~   s        coupling.
+x65x2          |I3c12+I4c12                                                                                                    % W+.f u~   s        coupling.
 x66x0          |0.5                                                                                                            % W+.f u~   b     coupling.
-x66x1          |-I3b13+I4b13                                                                                                   % W+.f u~   b        coupling.
-x66x2          |I3b13+I4b13                                                                                                    % W+.f u~   b        coupling.
+x66x1          |-I3c13+I4c13                                                                                                   % W+.f u~   b        coupling.
+x66x2          |I3c13+I4c13                                                                                                    % W+.f u~   b        coupling.
 x67x0          |0.5                                                                                                            % W+.f c~   d     coupling.
-x67x1          |-I3b21+I4b21                                                                                                   % W+.f c~   d        coupling.
-x67x2          |I3b21+I4b21                                                                                                    % W+.f c~   d        coupling.
+x67x1          |-I3c21+I4c21                                                                                                   % W+.f c~   d        coupling.
+x67x2          |I3c21+I4c21                                                                                                    % W+.f c~   d        coupling.
 x68x0          |0.5                                                                                                            % W+.f c~   s     coupling.
-x68x1          |-I3b22+I4b22                                                                                                   % W+.f c~   s        coupling.
-x68x2          |I3b22+I4b22                                                                                                    % W+.f c~   s        coupling.
+x68x1          |-I3c22+I4c22                                                                                                   % W+.f c~   s        coupling.
+x68x2          |I3c22+I4c22                                                                                                    % W+.f c~   s        coupling.
 x69x0          |0.5                                                                                                            % W+.f c~   b     coupling.
-x69x1          |-I3b23+I4b23                                                                                                   % W+.f c~   b        coupling.
-x69x2          |I3b23+I4b23                                                                                                    % W+.f c~   b        coupling.
+x69x1          |-I3c23+I4c23                                                                                                   % W+.f c~   b        coupling.
+x69x2          |I3c23+I4c23                                                                                                    % W+.f c~   b        coupling.
 x70x0          |0.5                                                                                                            % W+.f t~   d     coupling.
-x70x1          |-I3b31+I4b31                                                                                                   % W+.f t~   d        coupling.
-x70x2          |I3b31+I4b31                                                                                                    % W+.f t~   d        coupling.
+x70x1          |-I3c31+I4c31                                                                                                   % W+.f t~   d        coupling.
+x70x2          |I3c31+I4c31                                                                                                    % W+.f t~   d        coupling.
 x71x0          |0.5                                                                                                            % W+.f t~   s     coupling.
-x71x1          |-I3b32+I4b32                                                                                                   % W+.f t~   s        coupling.
-x71x2          |I3b32+I4b32                                                                                                    % W+.f t~   s        coupling.
+x71x1          |-I3c32+I4c32                                                                                                   % W+.f t~   s        coupling.
+x71x2          |I3c32+I4c32                                                                                                    % W+.f t~   s        coupling.
 x72x0          |0.5                                                                                                            % W+.f t~   b     coupling.
-x72x1          |-I3b33+I4b33                                                                                                   % W+.f t~   b        coupling.
-x72x2          |I3b33+I4b33                                                                                                    % W+.f t~   b        coupling.
+x72x1          |-I3c33+I4c33                                                                                                   % W+.f t~   b        coupling.
+x72x2          |I3c33+I4c33                                                                                                    % W+.f t~   b        coupling.
 x73x0          |yup*pow(2,-0.5)                                                                                                % Z.f  u~   u     coupling.
 x74x0          |yc*pow(2,-0.5)                                                                                                 % Z.f  c~   c     coupling.
 x75x0          |yt*pow(2,-0.5)                                                                                                 % Z.f  t~   t     coupling.

@@ -1,0 +1,91 @@
+M$ModelName = "Minimal_DM";
+
+M$Information = {
+  Authors       -> {"S. Horigome"},
+  Version      -> "1.0.0",
+  Institutions  -> {"Kavli IPMU"},
+  Emails        -> {"gomeshun@gmail.com"},
+  Date          -> "Apr. 23th, 2020",
+  References    -> {"The FeynRules Manual"}
+};
+
+FeynmanGauge = False;
+
+
+M$Parameters = {
+
+  cDM == {
+	ParameterType       -> External,
+	ComplexParameter	-> False,
+	value				-> 1/2
+  },
+
+  MDM == {
+    ParameterType 		-> External,
+	ComplexParameter	-> False,
+	(* InteractionOrder defines the order of interaction. 
+		For example, g1 (U(1) coupling) has "InteractionOrder -> {QED, 1}",
+		and alpha1 (U(1) fine structure constant) has "InteractionOrder -> {QED, 2}".*)
+	InteractionOrder	-> {DM, 1}, 
+	value				-> 1000,
+	TeX					-> Subscript["M","DM"],
+	Description			-> "DM mass"
+  }
+  
+};
+
+
+
+
+M$ClassesDescription = {
+
+  S[4] == {
+    ClassName        -> X0,
+    SelfConjugate    -> True,
+    Mass             -> {MDM,Internal},
+    Width            -> 0,
+    PropagatorLabel  -> {"X0"},
+    ParticleName     -> {"DM"},
+    FullName         -> {"neutral Dark Matter"} 
+  },
+  
+  S[5] == {
+    ClassName        -> Xp,
+    SelfConjugate    -> False,
+    Mass             -> {MDM,Internal},
+    Width            -> 0, (* really? *)
+    QuantumNumbers   -> {Q -> 1},
+    PropagatorLabel  -> {"X+"},
+    ParticleName     -> {"X+"},
+	AntiParticleName -> {"X-"},
+    FullName         -> {"charged Dark Matter"} 
+  },
+  
+  S[12] == { 
+    ClassName      -> X, 
+	SelfConjugate  -> False,
+    Unphysical     -> True, 
+    Indices        -> {Index[SU2W]}, (* Triplet DM *)
+	FlavorIndex    -> SU2W,
+    SelfConjugate  -> False,
+    QuantumNumbers -> {Y -> 0},
+	Definitions    -> { 
+	  X[1] -> (Xpbar+Xp)/Sqrt[2], X[2] -> (Xpbar-Xp)/(I*Sqrt[2]), X[3] -> X0}
+    }
+
+
+};
+
+
+			 
+LDM = Block[{ii},
+            cDM  ExpandIndices[
+				DC[Xbar[ii],mu] DC[X[ii],mu] + MDM^2 Xbar[ii] X[ii],
+				FlavorExpand -> {SU2W}]
+			];
+
+
+LTotal := LSM + LDM
+
+
+
