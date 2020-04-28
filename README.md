@@ -6,6 +6,10 @@ Please ploperly install following packages/libralies:
 
 - FeynRules
 - micrOmegas
+  - gcc, gfortran
+  - X11 (libx11-dev, etc.)
+ 
+# Installation
 
 # How to use it
 
