@@ -1,4 +1,4 @@
-Minimal_DM
+MinimalDM
  Parameters
   Name         | Value       |> Comment                                                                <|
 aEWM1          |127.9        |Inverse of the EW coupling constant at the Z pole                         |
@@ -14,8 +14,8 @@ yme            |0.000511     |Electron Yukawa mass                              
 ymm            |0.10566      |Muon Yukawa mass                                                          |
 ymtau          |1.777        |Tau Yukawa mass                                                           |
 cabi           |0.227736     |Cabibbo angle                                                             |
-cDM            |1.           |cDM                                                                       |
-MDM            |1.           |DM mass                                                                   |
+cDM            |0.5          |cDM                                                                       |
+MDM            |1000.0       |DM mass                                                                   |
 GG             |1.21977796370|Strong coupling constant at the Z pole   This value will be ignored and ca|
 MZ             |91.1876      |Mass of G0.                                                               |
 Me             |0.000511     |Mass of e.                                                                |

@@ -10,12 +10,13 @@ External libraries  and citation                                      <|
 %
 %This model implementation was created by:
 %   S. Horigome
-%Emails: 
+%Emails:
 %   gomeshun@gmail.com
 %Model version: 1.0.0
 %Date: Apr. 23th, 2020
-%Please cite: 
+%Please cite:
 %   The FeynRules Manual
 
 %This prototype is used when LHA support is turned on.
 extern int access(const char *pathname, int mode);
+========================================================================

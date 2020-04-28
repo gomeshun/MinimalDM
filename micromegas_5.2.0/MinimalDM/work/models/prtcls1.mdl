@@ -1,4 +1,4 @@
-Minimal_DM
+MinimalDM
  Particles
  Full  name  |A          |A+         | number |2*spin| mass          |width          |color|aux|>LaTex(A)<|>LaTeX(A+)   <|
 Photon       |a          |a          |22      |2     |0              |0              |1    |G  |a         |a             |
@@ -18,5 +18,5 @@ d-quark      |d          |d~         |1       |1     |MD             |0         
 s-quark      |s          |s~         |3       |1     |MS             |0              |3    |-1 |s         |s~            |
 b-quark      |b          |b~         |5       |1     |MB             |0              |3    |-1 |b         |b~            |
 H            |H          |H          |25      |0     |MH             |!WH            |1    |0  |H         |H             |
-neutral Dark |DM         |DM         |9000005 |0     |MDM            |0              |1    |0  |DM        |DM            |
-charged Dark |X+         |X-         |9000006 |0     |MDM            |0              |1    |3  |X+        |X-            |
+neutral Dark |~X0        |~X0        |9000005 |0     |MDM            |0              |1    |0  |~X0       |~X0           |
+charged Dark |~X+        |~X-        |9000006 |0     |MDM            |0              |1    |3  |~X+       |~X-           |
